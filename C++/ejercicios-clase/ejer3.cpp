@@ -1,15 +1,17 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int resp_correctas = 0, resp_incorrectas = 0, puntaje_final = 0;
-
+    int correctas = 0, incorrectas = 0, blanco, puntaje_final;
     cout << "Ingrese la cantidad de respuestas correctas: " << endl;
-    cin >> resp_correctas;
+    cin >> correctas;
     cout << "Ingrese la cantidad de respuestas incorrectas: " << endl;
-    cin >> resp_incorrectas;
-    puntaje_final =( resp_correctas * 4) + (resp_incorrectas * -1);
+    cin >> incorrectas;
+    cout << "Ingrese la cantidad de respuestas en blanco: " << endl;
+    cin >> blanco;
 
-    cout << "----------------------------------------" << endl;
-    cout << "El puntaje final es de: " << puntaje_final << " puntos." << endl;
+    puntaje_final = (correctas * 4) + (incorrectas * -1) + (blanco * 0);
+    cout << "\n";
+    cout << "------------------------" << endl;
+    cout << "EL puntaje final de acuerdo a las respuestas es: " << puntaje_final << endl;
     return 0;
 }

@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int partidos_ganados = 0, partidos_perdidos = 0, partidos_empatados = 0, puntaje_final = 0;
-    cout << "Ingrese la cantidad de partido ganados: " << endl;
-    cin >> partidos_ganados;
+    int ganados, perdidos, empatados, puntaje_final;
+
+    cout << "Ingrese la cantidad de partidos ganados: " << endl;
+    cin >> ganados;
     cout << "Ingrese la cantidad de partidos perdidos: " << endl;
-    cin >> partidos_perdidos;
-    cout << "Ingrese por ultimo los partidos empatados: " << endl;
-    cin >> partidos_empatados;
-    
-    puntaje_final = partidos_ganados * 3 + partidos_empatados * 1 + partidos_perdidos * 0;
-    cout << "------------------------------------" << endl;
-    cout << "El puntaje final del equipo es: " << puntaje_final << endl;
+    cin >> perdidos;
+    cout << "Ingrese la cantidad de partidos empatados: " << endl;
+    cin >> empatados;
+
+    puntaje_final = (ganados * 3) + (empatados * 1) + (perdidos * 0);
+
+    cout << "\n";
+    cout << "--------------------------" << endl;
+    cout << "El puntaje final es de: " << puntaje_final << endl;
     return 0;
 }
